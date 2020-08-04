@@ -19,13 +19,13 @@ public class Program {
 		System.out.println(MENU);
 		manager.readerNFeFile("C:\\Users\\gusta\\OneDrive\\Documentos\\NFeDataSystem.txt");
 		while (true) {
-			String comando = sc.next();
+			String command = sc.next();
 			sc.nextLine();
-			if (comando.equals("exit")) {
+			if (command.equals("exit")) {
 				break;
-			} else if (comando.equals("register")) {
+			} else if (command.equals("register")) {
 				manager.registerNFe();
-			} else if (comando.equals("search")) {
+			} else if (command.equals("search")) {
 				manager.searchNFe();
 			}
 		} System.out.println("System closed.");
